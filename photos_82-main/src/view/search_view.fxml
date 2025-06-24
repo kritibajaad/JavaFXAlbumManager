@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.view.SearchViewController"
+      spacing="10">
+      
+    <padding>
+        <Insets top="15.0" right="15.0" bottom="15.0" left="15.0"/>
+    </padding>
+
+    <Label text="Search Photos" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10">
+        <Label text="Tag 1 (type=value):"/>
+        <TextField fx:id="tag1Field" promptText="e.g. person=maya"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Tag 2 (type=value):"/>
+        <TextField fx:id="tag2Field" promptText="Optional second tag"/>
+        <ChoiceBox fx:id="operatorChoice"/>
+    </HBox>
+
+   <HBox spacing="10">
+    <Label text="Start Date (yyyy-MM-dd):"/>
+    <TextField fx:id="startDateField" promptText="e.g. 2024-01-01"/>
+</HBox>
+
+<HBox spacing="10">
+    <Label text="End Date (yyyy-MM-dd):"/>
+    <TextField fx:id="endDateField" promptText="e.g. 2024-12-31"/>
+</HBox>
+
+
+    <Button text="Search" onAction="#handleSearch"/>
+    
+    <Label text="Results:"/>
+    <ListView fx:id="resultsList" prefHeight="200"/>
+
+    <HBox spacing="10">
+        <Button text="Back to Album" onAction="#handleBack"/>
+        <Button text="Save Results as Album" onAction="#handleSaveAsAlbum"/>
+
+    </HBox>
+
+</VBox>

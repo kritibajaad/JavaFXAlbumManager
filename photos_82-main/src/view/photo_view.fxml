@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.view.PhotoViewController">
+
+    <top>
+        <Label text="Photo Viewer" BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <ListView fx:id="photoList" prefHeight="300"/>
+    </center>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button text="Add Photo" onAction="#addPhoto"/>
+            <Button text="Remove Photo" onAction="#removePhoto"/>
+            <Button text="Edit Caption" onAction="#editCaption"/>
+            <Button text="Add Tag" onAction="#addTag"/>
+            <Button text="Remove Tag" onAction="#removeTag"/>
+            <Button text="Back to Albums" onAction="#back"/>
+            <Button text="Copy Photo" onAction="#copyPhoto"/>
+            <Button text="Move Photo" onAction="#movePhoto"/>
+            <Button text="Search Photos" onAction="#search"/>
+            <Button text="Slideshow" onAction="#slideshow"/>
+            <Button text="Logout" onAction="#logout"/>
+
+        </HBox>
+    </bottom>
+</BorderPane>
