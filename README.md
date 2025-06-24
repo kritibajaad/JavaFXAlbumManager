@@ -30,4 +30,11 @@ A feature-rich desktop application for managing photo albums, built using JavaFX
 ---
 
 ## 📁 Project Structure
-<pre> ## 📁 Project Structure ``` src/ ├── controller/ # JavaFX Controllers for each screen ├── model/ # Photo, Album, Tag, and User classes ├── view/ # FXML files and styling └── PhotosFX.java # Main launcher class ``` </pre>
+## 📁 Project Structure
+
+| Folder/File       | Description                                |
+|-------------------|--------------------------------------------|
+| `controller/`      | JavaFX Controllers for each screen         |
+| `model/`           | Photo, Album, Tag, and User classes        |
+| `view/`            | FXML files and styling                     |
+| `PhotosFX.java`    | Main launcher class                        |
