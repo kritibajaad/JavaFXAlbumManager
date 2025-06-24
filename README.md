@@ -1,7 +1,5 @@
 # JavaFXAlbumManager
 
-# JavaFX Album Manager 
-
 A feature-rich desktop application for managing photo albums, built using JavaFX. Users can create, view, organize, and search photo collections with tagging, captioning, and slideshow support — all through an intuitive GUI.
 
 ---
