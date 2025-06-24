@@ -30,7 +30,6 @@ A feature-rich desktop application for managing photo albums, built using JavaFX
 ---
 
 ## 📁 Project Structure
-## 📁 Project Structure
 
 | Folder/File       | Description                                |
 |-------------------|--------------------------------------------|
